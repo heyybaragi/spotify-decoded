@@ -236,7 +236,7 @@ def load_data():
     t = pd.read_csv(csv_path)
 
     t["ts"]       = pd.to_datetime(t["ts"], utc=True)
-    t["ts_local"] = pd.to_datetime(t["ts_local"]).dt.tz_localize("Asia/Kolkata")
+   t["ts_local"] = pd.to_datetime(t["ts_local"], utc=True).dt.tz_convert("Asia/Kolkata")
     t["date"]     = pd.to_datetime(t["date"])
     t["skipped"]  = t["skipped"].astype(bool)
     t["completed"] = t["completed"].astype(bool)
