@@ -96,7 +96,7 @@ The dashboard loads from `data/processed/tracks_clean.csv`. If you want to run t
 
 ## Live demo
 
-[View the dashboard](https://spotify-decoded-heyybaragi.streamlit.app/) ← update this after deployment
+[View the dashboard](https://spotify-decoded-heyybaragi.streamlit.app/)
 
 ---
 
